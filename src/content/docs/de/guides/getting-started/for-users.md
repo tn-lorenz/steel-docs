@@ -1,11 +1,11 @@
 ---
 title: Set up für Benutzer
-description: How to set-up the project and start contributing.
+description: Wie man das Projekt aufsetzt und damit beginnt beizutragen.
 ---
 
 ### Was du in diesem Guide lernen wirst:
 
-- How to install the Rust toolchain
-- How to download the SteelMC repository
-- How to compile the binary
-- How to set up and start a simple server
+- Wie man die Rust-toolchain installiert
+- Wie man das SteelMC repository herunterläd
+- Wie man die Steel binary erzeugt
+- Wie man einen einfachen Server aufsetzt
