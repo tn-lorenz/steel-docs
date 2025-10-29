@@ -6,14 +6,18 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: {
+        		en: 'Steel-Docs',
+        		'de': 'Steel-Doku',
+      		},
+			social: [{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/MwChEHnAbh' }, { icon: 'github', label: 'GitHub', href: 'https://github.com/4lve/SteelMC' }],
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Getting started',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Set up', slug: 'guides/getting-started/set-up' }, 
+						{ label: 'For users', slug: 'guides/getting-started/for-users' }, 
+						{ label: 'For developers', slug: 'guides/getting-started/for-devs' },
 					],
 				},
 				{
@@ -21,6 +25,20 @@ export default defineConfig({
 					autogenerate: { directory: 'reference' },
 				},
 			],
+			
+			defaultLocale: 'root',
+			locales: {
+				// English docs in `src/content/docs/en/`
+				root: {
+					label: 'English',
+					lang: 'en'
+				},
+				// Sprich Deutsch, du Hurensohn :O) `src/content/docs/de/`
+				'de': {
+					label: 'Deutsch',
+					lang: 'de',
+				},
+			},
 		}),
 	],
 });
