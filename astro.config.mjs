@@ -1,8 +1,16 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+//import { getRelativeLocaleUrl } from 'astro:i18n';
 
-// https://astro.build/config
+import en from './src/content/i18n/en.json';
+import de from './src/content/i18n/de.json';
+
+//const t = Astro.currentLocale;
+//const t = getRelativeLocaleUrl;
+//const LOCALE = process.env.LANG;
+//const t = LOCALE === 'en' ? en : de;
+
 export default defineConfig({
 	integrations: [
 		starlight({
@@ -15,10 +23,10 @@ export default defineConfig({
 				{
 					label: 'Getting started',
 					items: [
-						{ label: 'Set up', slug: 'guides/getting-started/set-up' }, 
-						{ label: 'For users', slug: 'guides/getting-started/for-users' }, 
-						{ label: 'For developers', slug: 'guides/getting-started/for-devs' },
-					],
+        				{ slug: 'guides/getting-started/set-up' },
+        				{ slug: 'guides/getting-started/for-users' },
+        				{ slug: 'guides/getting-started/for-devs' },
+      				],
 				},
 				{
 					label: 'Reference',
