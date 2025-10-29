@@ -1,18 +1,7 @@
-import { defineCollection, z } from 'astro:content';
-import { docsLoader, i18nLoader } from '@astrojs/starlight/loaders';
-import { docsSchema, i18nSchema } from '@astrojs/starlight/schema';
+import { defineCollection } from 'astro:content';
+import { docsLoader } from '@astrojs/starlight/loaders';
+import { docsSchema } from '@astrojs/starlight/schema';
 
 export const collections = {
 	docs: defineCollection({ loader: docsLoader(), schema: docsSchema() }),
-	i18n: defineCollection({
-		loader: i18nLoader(), 
-		schema: i18nSchema({
-			extend: z.object({
-				// All the guides' names must be represented here.
-        		'guide.set-up': z.string().optional(),
-				'guide.for-users': z.string().optional(),
-				'guide.for-devs': z.string().optional(),
-      		}),
-		})
-	}),
 };
