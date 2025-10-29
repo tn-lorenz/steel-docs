@@ -1,15 +1,5 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-//import { getRelativeLocaleUrl } from 'astro:i18n';
-
-import en from './src/content/i18n/en.json';
-import de from './src/content/i18n/de.json';
-
-//const t = Astro.currentLocale;
-//const t = getRelativeLocaleUrl;
-//const LOCALE = process.env.LANG;
-//const t = LOCALE === 'en' ? en : de;
 
 export default defineConfig({
 	integrations: [
@@ -22,6 +12,7 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Getting started',
+					// We don't fore labels here so the pages can either fallback to their (language-specific) title or a sidebar override from the frontmatter!
 					items: [
         				{ slug: 'guides/getting-started/set-up' },
         				{ slug: 'guides/getting-started/for-users' },
