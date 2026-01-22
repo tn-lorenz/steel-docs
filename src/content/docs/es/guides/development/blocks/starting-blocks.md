@@ -5,7 +5,9 @@ sidebar:
     label: Añadir un nuevo bloque
 ---
 
-> ⚠️ Esta es solo una guía muy básica y **no implementa ninguna funcionalidad todavía**.
+:::caution
+Esta es solo una guía muy básica y **no implementa ninguna funcionalidad todavía**.
+:::
 
 ---
 
@@ -71,7 +73,9 @@ impl IronBarsBlock {
 impl BlockBehaviour for IronBarsBlock {}
 ```
 
-> ⚠️ Esta es solo una guía muy básica y **no implementa ninguna funcionalidad todavía**.
+:::caution
+Esta es solo una guía muy básica y **no implementa ninguna funcionalidad todavía**.
+:::
 
 ---
 
@@ -118,9 +122,10 @@ Entender lo que hace internamente la función `generate_registrations` puede ser
 
 Ahora es momento de cambiar de foco a la función `build` en el archivo actual.
 
-> ⚠️ **Importante:**
+:::caution[Importante]
 > Solo **añade** codigo nuevo.
 > **No quites o modifiques el codigo existente**, pues podrias romper bloques de otros contribuidores.
+:::
 
 ---
 
@@ -179,11 +184,11 @@ let iron_bar_registrations =
 
 ## 13. Añade tus registros a la salida
 
-⚠️ **¡Aquí andate con ojo!**
-
+:::caution[¡Aquí andate con ojo!]
 * El `#` anterior al nombre de tu variable es **necesario**
 * Esto evita que la variable colisione con palabras clave de Rust
 * **NO** añadas una coma al final; este código se implementará en otro archivo.
+:::
 
 Ejemplo:
 
@@ -247,7 +252,9 @@ Como ya ha sido indicado, el bloque actualmente **no hace nada**.
 
 Para darle comportamientos, tienes que implementar los métodos requeridos en `BlockBehaviour` en tu archivo (ej. `iron_bars_block.rs`).
 
-> 👉 **Recomendamos** echarle un vistazo a otras implementaciones de bloques con funcionalidad similar al tuyo.
+:::tip[Recomendación]
+Echale un vistazo a otras implementaciones de bloques con funcionalidad similar al tuyo.
+:::
 
 Para ello, aquí tienes alguna información para que lo entiendas mejor:
 
