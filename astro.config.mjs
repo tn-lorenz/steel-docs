@@ -64,7 +64,7 @@ export default defineConfig({
                     label: 'Reference',
                     translations: {
                         es: 'Referencias',
-                        de: 'Referenze'
+                        de: 'Referenz'
                     },
                     autogenerate: { directory: 'reference' },
                 },
