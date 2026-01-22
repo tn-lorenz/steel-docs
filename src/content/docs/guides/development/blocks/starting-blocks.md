@@ -3,7 +3,9 @@ title: Adding a New Block (Basic Setup)
 description: Gives a basic guidance of how to add a new block without a behaviour and gives hints for behaviour
 ---
 
-> ⚠️ This is only the very basic setup and **does not provide any functionality yet**.
+:::caution
+This is only the very basic setup and **does not provide any functionality yet**.
+:::
 
 ---
 
@@ -68,7 +70,9 @@ impl IronBarsBlock {
 impl BlockBehaviour for IronBarsBlock {}
 ```
 
-> ⚠️ This is only the basic setup and **doesn't give any functionality yet!**
+:::caution
+This is only the basic setup and **doesn't give any functionality yet!**
+:::
 
 ---
 
@@ -116,9 +120,11 @@ If you want to understand what is happening internally, the function
 
 We will now focus on the `build` function in the opened file.
 
-⚠️ **Important:**
+
+:::caution[Important]
 Only **add** new code.
 Do **not remove or modify existing code**, as this could break blocks from other contributors.
+:::
 
 ---
 
@@ -177,11 +183,11 @@ let iron_bar_registrations =
 
 ## 13. Add the Registrations to the Output
 
-⚠️ **Be very careful here!**
-
+:::caution[Be careful here!]
 * The `#` before the registration name is **required**
 * It prevents name collisions with Rust keywords
 * Do **not** add a trailing comma — this code is generated into another file
+:::
 
 Example:
 
@@ -245,7 +251,9 @@ Like already said, at this point the block **does nothing**.
 
 To add behavior, you need to implement the necessary methods in `BlockBehaviour` in your file (e.g. `iron_bars_block.rs`).
 
-👉 **I would recommend** looking at other block implementations to check which have similar block functionality as your block.
+:::tip[Recommendation]
+You should look at other block implementations to check which have similar block functionality as your block.
+:::
 
 For that, here is some information to give you a better understanding:
 

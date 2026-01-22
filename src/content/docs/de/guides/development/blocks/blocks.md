@@ -11,4 +11,4 @@ Blöcke werden in Rust mit einem flexiblen Verhaltenssystem für benutzerdefinie
 
 ## Verfügbare Anleitungen
 
-- [**Einen neuen Block hinzufügen (Grundlegende Einrichtung)**](starting-blocks) - Lerne, wie man Blöcke registriert und erstellt
+- [**Einen neuen Block hinzufügen (Grundlegende Einrichtung)**](../starting-blocks) - Lerne, wie man Blöcke registriert und erstellt

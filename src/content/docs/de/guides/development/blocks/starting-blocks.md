@@ -3,7 +3,9 @@ title: Einen neuen Block hinzufügen (Grundlegende Einrichtung)
 description: Grundlegende Anleitung zum Hinzufügen eines neuen Blocks ohne Verhalten mit Hinweisen für Verhaltensimplementierung
 ---
 
-> ⚠️ Dies ist nur die grundlegende Einrichtung und **bietet noch keine Funktionalität**.
+:::caution
+Dies ist nur die grundlegende Einrichtung und **bietet noch keine Funktionalität**.
+:::
 
 ---
 
@@ -68,7 +70,9 @@ impl IronBarsBlock {
 impl BlockBehaviour for IronBarsBlock {}
 ```
 
-> ⚠️ Dies ist nur die grundlegende Einrichtung und **bietet noch keine Funktionalität!**
+:::caution
+Dies ist nur die grundlegende Einrichtung und **bietet noch keine Funktionalität!**
+:::
 
 ---
 
@@ -116,9 +120,10 @@ Wenn du verstehen möchtest, was intern passiert, kann die Funktion
 
 Wir konzentrieren uns nun auf die `build`-Funktion in der geöffneten Datei.
 
-⚠️ **Wichtig:**
+:::caution[Wichtig]
 Nur **neuen Code hinzufügen**.
 **Keinen bestehenden Code entfernen oder ändern**, da dies Blöcke anderer Mitwirkender beschädigen könnte.
+:::
 
 ---
 
@@ -177,11 +182,11 @@ let iron_bar_registrations =
 
 ## 13. Registrierungen zur Ausgabe hinzufügen
 
-⚠️ **Sei hier sehr vorsichtig!**
-
+:::caution[Sei hier sehr vorsichtig!]
 * Das `#` vor dem Registrierungsnamen ist **erforderlich**
 * Es verhindert Namenskollisionen mit Rust-Keywords
 * Füge **kein** abschließendes Komma hinzu — dieser Code wird in eine andere Datei generiert
+:::
 
 Beispiel:
 
@@ -245,7 +250,9 @@ Wie bereits gesagt, **macht der Block an diesem Punkt nichts**.
 
 Um Verhalten hinzuzufügen, musst du die notwendigen Methoden in `BlockBehaviour` in deiner Datei implementieren (z.B. `iron_bars_block.rs`).
 
-👉 **Ich würde empfehlen**, sich andere Block-Implementierungen anzusehen, um zu prüfen, welche ähnliche Block-Funktionalität wie dein Block haben.
+:::tip
+**Ich würde empfehlen**, sich andere Block-Implementierungen anzusehen, um zu prüfen, welche ähnliche Block-Funktionalität wie dein Block haben.
+:::
 
 Dafür sind hier einige Informationen, um dir ein besseres Verständnis zu geben:
 
