@@ -21,40 +21,40 @@ export default defineConfig({
                 {
                     label: 'Getting started',
                     translations: {
-                        // de: '',
                         es: 'Primeros pasos',
+                        de: 'Erste Schritte'
                     },
                     autogenerate: { directory: 'guides/getting-started' },
                 },
                 {
                     label: 'Configuration',
                     translations: {
-                        // de: '',
                         es: 'Configuración',
+                        de: 'Konfiguration',
                     },
                     autogenerate: { directory: 'guides/configuration' },
                 },
                 {
                     label: 'Development',
                     translations: {
-                        // de: '',
                         es: 'Desarrollo',
+                        de: 'Entwicklung'
                     },
                     items: [
                         'guides/development/decompile-minecraft',
                         {
                             label: 'Blocks',
                             translations: {
-                                // de: '',
                                 es: 'Bloques',
+                                de: 'Blöcke',
                             },
                             autogenerate: { directory: 'guides/development/blocks' }
                         },
                         {
                             label: 'Network',
                             translations: {
-                                // de: '',
                                 es: 'Red',
+                                de: 'Netzwerk',
                             },
                             autogenerate: { directory: 'guides/development/network' }
                         },
@@ -63,8 +63,8 @@ export default defineConfig({
                 {
                     label: 'Reference',
                     translations: {
-                        // de: '',
                         es: 'Referencias',
+                        de: 'Referenz'
                     },
                     autogenerate: { directory: 'reference' },
                 },
